@@ -1,0 +1,86 @@
+@import "background";
+@import "font";
+$baccolor: rgb(9, 48, 98);
+$textcol: white;
+$headercol: rgb(238, 255, 0);
+$butcol: green;
+$butsize: 5px black solid;
+$margin: 50px;
+$padding: 10px;
+$width: 200px;
+$dec: none, dotted;
+$center: center;
+
+@mixin divstyle{
+    color: $textcol;
+}
+
+@mixin button{
+    background-color: $butcol;
+    border: $butsize;
+    border-radius: 25px;
+}
+
+@mixin heading{
+    color: $headercol;
+    text-decoration: dotted;
+}
+
+@mixin table{
+    background-color: $baccolor;
+    color: $textcol;
+}
+
+@mixin borderStyle($width:4px, $borderColor:black){
+    border:$width solid $borderColor
+}
+
+body{
+    background-color: rgb(8, 58, 124);
+    font-family: $fontfam;
+    margin: $margin;
+    padding: $padding;
+}
+
+h1, h2, h3, h4{
+    @include heading();
+}
+
+h6{
+    @include borderStyle(100px, red)
+}
+
+div{
+    @include divstyle();
+}
+
+ul{
+    @include table();
+}
+
+button{
+    @include button();
+}
+
+img{
+    width: $width;
+}
+
+a{
+    color: $textcol;
+    text-decoration: $dec;
+    &:hover{
+        color: black;
+        font-size: 20px;
+    }
+}
+
+section{
+    img{
+        width: 200px;
+        border: rgb(16, 67, 33) 5px solid;
+        &:hover{
+            height:200px;
+        }
+    }
+}

@@ -1,0 +1,57 @@
+html {
+  background-color: black;
+}
+
+body {
+  background-color: rgb(8, 58, 124);
+  font-family: "Arial";
+  margin: 50px;
+  padding: 10px;
+}
+
+h1, h2, h3, h4 {
+  color: rgb(238, 255, 0);
+  -webkit-text-decoration: dotted;
+          text-decoration: dotted;
+}
+
+h6 {
+  border: 100px solid red;
+}
+
+div {
+  color: white;
+}
+
+ul {
+  background-color: rgb(9, 48, 98);
+  color: white;
+}
+
+button {
+  background-color: green;
+  border: 5px black solid;
+  border-radius: 25px;
+}
+
+img {
+  width: 200px;
+}
+
+a {
+  color: white;
+  -webkit-text-decoration: none, dotted;
+          text-decoration: none, dotted;
+}
+a:hover {
+  color: black;
+  font-size: 20px;
+}
+
+section img {
+  width: 200px;
+  border: rgb(16, 67, 33) 5px solid;
+}
+section img:hover {
+  height: 200px;
+}/*# sourceMappingURL=style.css.map */
